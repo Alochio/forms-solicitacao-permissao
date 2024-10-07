@@ -1,0 +1,56 @@
+<div class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <form>
+        <fieldset>
+            <legend>Controle de Permissões:</legend>
+            <div class="mb-3">
+                <label for="selectRequiicao" class="form-label">Selecione a ação que deseja realizar:</label>
+                <select id="selectRequiicao" class="form-select">
+                    <option disabled selected>Selecionar ação</option>
+                    <option>Atribuir Permissão</option>
+                    <option>Editar Permissão</option>
+                    <option>Excluir Permissão</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="pnSolicitante" class="form-label">PN:</label>
+                <input type="text" id="pnSolicitante" class="form-control"
+                    placeholder="Digite a PN do usuário que será liberada a permissão.">
+            </div>
+            <div class="mb-3">
+                <label for="nomeSolicitante" class="form-label">Nome:</label>
+                <input type="text" id="nomeSolicitante" class="form-control"
+                    placeholder="Digite o nome completo do usuário que será liberada a permissão.">
+            </div>
+            <div class="mb-3">
+                <label for="gerenciaSolicitante" class="form-label">Gerência:</label>
+                <input type="text" id="gerenciaSolicitante" class="form-control"
+                    placeholder="Digite a gerência do usuário que será liberada a permissão.">
+            </div>
+            <div class="mb-3">
+                <label for="selectMenu" class="form-label">Selecione o sistema para atribuir a permissão:</label>
+                <select id="selectMenu" class="form-select">
+                    <option disabled selected>Selecionar permissão</option>
+                    <option id="permissaoAF">Alto Forno - Intramon</option>
+                    <option id="permissaoQA">Qualidade - Intramon</option>
+                    <option id="permissaoUTI">Utilidades - Intramon</option>
+                    <option id="permissaoLNC">Solicitação de lanches - Sistema extra</option>
+                    <option id="permissaoPLNT">Sistema de plantões - Sistema extra</option>
+                    <option id="permissaoTRNSP">Sistema de transportes - Sistema extra</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="selectNivelPermissao" class="form-label">Selecione o nível de permissão para o
+                    usuário:</label>
+                <select id="selectNivelPermissao" class="form-select">
+                    <option disabled selected>Selecionar nível de permissão</option>
+                    <option>A1 - Adiministrador 1</option>
+                    <option>O1 - Operador 1</option>
+                    <option>V1 - Visualizador 1</option>
+                </select>
+            </div>
+            <div id="buttonEvent">
+                <button type="submit" class="btn btn-light" id="atribuir">Atribuir Permissão</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
