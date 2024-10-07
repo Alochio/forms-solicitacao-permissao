@@ -1,14 +1,3 @@
-const pnUsuario = "10101010";
-
-//select do banco para saber as permissões que o usuario tem
-
-const vetPermissoes = ['A1', 'V1','V1','V1','V1','V1','V1','V1','V1','V1','V1'];
-
-
-
-
-
-
 $(document).ready(function () {
   $("#content").load("telasPermissao/formSolicitarPermissao.html");
 
@@ -28,3 +17,26 @@ $(document).ready(function () {
     $("#content").load("telasPermissao/formSolicitarPermissao.html");
   });
 });
+
+
+const pnUsuario = "10101010";
+
+//select do banco para saber as permissões que o usuario tem
+
+const vetPermissoes = ['A1', 'V1','V1','V1','V1','V1','V1','V1','V1','V1','V1'];
+
+const permissoes = [
+    intra_af = vetPermissoes[0],
+    intra_qualidade = vetPermissoes[1],
+    intra_utilidades = vetPermissoes[2],
+    intra_aciaria = vetPermissoes[3]
+]
+
+console.log(intra_af);
+
+function analisaPermissoes(){
+    for(let i = 0; i < vetPermissoes.length; i++){
+        
+    }
+}
+
